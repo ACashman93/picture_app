@@ -1,0 +1,149 @@
+@import "bootstrap";
+@import "gritter";
+
+body {
+  background-color: #ddccff;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #ddccff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.nav-color {
+  background-color: #ccb3ff;
+}
+
+.nav-title {
+  margin-right: 25px;
+}
+
+.portfolio-container {
+  padding-top: 65px;
+}
+
+.col-wrapper {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 3;
+  column-gap: 10px;
+  column-fill: auto;
+}
+
+.img-pin img {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.img-pin {
+  display: inline-block;
+  background-color: lightgray;
+  border: 2px solid lightgray;
+  margin: 0px 2px 15px 0px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  padding: 15px 15px 5px 15px;
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  opacity: 1;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.img-pin:hover {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sidebar-btn:hover {
+  background-color: #b30000;
+  color: #f2f2f2;
+  border: #f2f2f2;
+}
+
+.home-card {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 25px;
+  min-width: 80%;
+}
+
+.show-card {
+  padding: 25px;
+  margin: 30px;
+}
+
+.new-card {
+  padding: 25px;
+}
+
+.new-card-head {
+  margin-top: 15%;
+  text-align: center;
+}
+
+#background-img-rose {
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  width: 200px;
+  height: 200px;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('PC-Typing.jpeg') no-repeat;
+  background-size: 50%;
+}
+
+.blog-sidebar {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+

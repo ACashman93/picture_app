@@ -1,0 +1,9 @@
+<div class="album text-muted">
+  <div class="container portfolio-container">
+    <div class="col-wrapper">
+      <% @pics.each do |picture| %>
+        <%= link_to (image_tag picture.image), picture, class: "img-pin" %>
+      <% end %>
+    </div>
+  </div>
+</div>

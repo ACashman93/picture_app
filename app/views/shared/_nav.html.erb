@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-color">
+  <div class="masthead clearfix">
+    <div class="container">
+      <div class="inner">
+        <nav class="nav nav-masthead app-nav">
+        <h3 class="masthead-brand text-white nav-title">Photo Album</h3>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <%= nav_helper 'nav-link', 'li' %>
+              <%= login_helper %>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</nav>
