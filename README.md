@@ -1,24 +1,13 @@
-# README
+# Family Picture App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Functionality
+- Login and logout
+- Ability to upload and store photos
+- Carousel of uploaded photos on homepage
+- Sort each photo by an assigned category
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Implementations
+- Devise for authentication
+- AWS connection to store photos
+- Foreign key relationships to association a photo with a category
+- Bootstrap styling including cards, navbars, and a carousel

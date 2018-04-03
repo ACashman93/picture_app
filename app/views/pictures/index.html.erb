@@ -2,7 +2,7 @@
   <div class="container portfolio-container">
     <div class="col-wrapper">
       <% @pics.each do |picture| %>
-        <%= link_to (image_tag picture.image), picture, class: "img-pin" %>
+        <%= link_to (image_tag img_check(picture.image, 'image_holder')), picture, class: "img-pin" %>
       <% end %>
     </div>
   </div>

@@ -3,6 +3,8 @@
 
 body {
   background-color: #ddccff;
+  border-left: #F4F5F9 solid 50px;
+  border-right: #F4F5F9 solid 50px;
 }
 
 :root {
@@ -126,7 +128,7 @@ footer p {
   text-align: center;
 }
 
-#background-img-rose {
+#background-img-rose-1 {
   position: fixed;
   top: 85%;
   left: 90%;
@@ -135,7 +137,20 @@ footer p {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('PC-Typing.jpeg') no-repeat;
+  background: image-url('RedRose2.svg.png') no-repeat;
+  background-size: 50%;
+}
+
+#background-img-rose-2 {
+  position: fixed;
+  top: 85%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  background: image-url('RedRose2.svg.png') no-repeat;
   background-size: 50%;
 }
 

@@ -1,9 +1,10 @@
 <%= form_for(pic) do |f| %>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-md-12">
       <div class="form-group">
-       <%= f.label "Image:", class: "sr-only" %>
-       <%= f.file_field :image, class: "form-control-file form-control-lg btn-info" %>
+        <label class="btn btn-outline-secondary btn-lg">
+          Choose file: <%= f.file_field :image, style: 'display:none;' %>
+        </label>
       </div>
 
       <div class="form-group">
@@ -12,14 +13,23 @@
       </div>
 
       <div class="form-group">
-       <%= f.submit "Add new picture", class: "btn btn-outline-secondary btn-lg" %>
+        <%= f.label "Category:", class: "sr-only" %>
+        <%= f.collection_select(:type_id, Type.all, :id, :title,
+                                {
+                                  include_blank: true
+                                },
+                                class: "form-control"
+                                )
+        %>
       </div>
-    </div>
 
-    <div class="col-lg-6">
       <div class="form-group">
-       <%= f.label "Description:" %>
-       <%= f.text_area :description, class: 'form-control', rows: 5 %>
+        <%= f.label "Description:" %>
+        <%= f.text_area :description, class: 'form-control', rows: 5 %>
+      </div>
+
+      <div class="form-group">
+       <%= f.submit "Add new picture", class: "btn btn-outline-secondary btn-lg" %>
       </div>
     </div>
   </div>
