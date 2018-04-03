@@ -1,24 +1,70 @@
 # Family Picture App
 
 ## Functionality
-- Login and logout
-- Ability to upload and store photos
-- Carousel of uploaded photos on homepage
-- Sort each photo by an assigned category
+### TABELS
+- Users
+-- First Name
+-- Last Name
+-- Email
+-- Password
+-- Password Confirmation
 
-## Implementations
-- Devise for authentication
+- Images
+-- Image
+-- Date
+-- Category
+-- Description
+
+### PAGES
+- Login
+-- No registration
+-- Authenticate
+- Home
+-- Carousel
+-- Sidebar and navbar
+- All photos
+-- Cascades images through three columns
+-- Images are links to show page
+- Add image
+-- Form
+--- File select image
+--- Date
+--- Drop down menu of categories
+--- Description text field
+- Categories
+-- Shows list of all categories
+-- Add new categories
+
+## Components
+- Navbar
+-- Home
+-- Categories
+-- All photos
+-- Sign In & Sign Up (Signed Out) (toggle)
+-- Sign Out (Signed In) (toggle)
+
+- Sidebar
+-- Add new image
+-- Add new category
+
+- Devise
+-- Authentication
+
 - AWS connection to store photos
-- Foreign key relationships to association a photo with a category
-- Bootstrap styling including cards, navbars, and a carousel
+-- Carrier wave and related implemnetaion
+
+- Foreign key
+-- Associating images to categories
+
+- Bootstrap
+-- Cards, navbars, and a carousel
 
 ### User Story
-- Hannah goes to website and has to login before continuing
-- No ability to create an account, one must be created for you
-- Hannah logs in, and goes to home page
-- On homepage, there is a slideshow of images
-- Sidebar button to view all images that have been uploaded
-- Sidebar button to upload a new image
-- From the navbar, she can click through to pages with specified images
-- In each page, she can only view the images that are associated with that category
-- Hannah logs out
+- Bob goes to site url
+- Bob sees a login screen from start (can't access any part of the site without logging in)
+- Bob doesn't see a register button, goes and asks Paul for a login
+- Bob logs into the website
+
+
+
+

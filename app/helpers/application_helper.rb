@@ -12,24 +12,12 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: andrew_path,
-        title: 'Andrew'
+        url: categories_path,
+        title: 'Categories'
       },
       {
-        url: jacob_path,
-        title: 'Jacob'
-      },
-      {
-        url: family_path,
-        title: 'Family'
-      },
-      {
-        url: event_path,
-        title: 'Events'
-      },
-      {
-        url: holiday_path,
-        title: 'Holidays'
+        url: pictures_path,
+        title: 'All images'
       }
     ]
   end
@@ -38,7 +26,7 @@ module ApplicationHelper
     nav_links = ''
 
     nav_items.each do |item|
-      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
+      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} nav-tabs nav-tabs-style #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
     end
 
     nav_links.html_safe

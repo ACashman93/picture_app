@@ -161,4 +161,26 @@ footer p {
   margin-top: 25px;
 }
 
+.nav-tabs:hover {
+  background-color: #9966ff;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.active {
+  background-color: #A3A0AF;
+  border-left: 1px solid #8D8B99;
+  border-right: 1px solid #8D8B99;
+  border-top: 1px solid #8D8B99;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
 
