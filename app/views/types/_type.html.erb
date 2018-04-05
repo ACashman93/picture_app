@@ -1,0 +1,13 @@
+<div class="card-header type-text">
+  <div class="row">
+    <div class="col-md-8">
+        <%= link_to type.title, type_path(type) %>
+    </div>
+    <div class="col-md-2">
+        <%= link_to '', edit_type_path(type), class: "btn btn-default glyphicon glyphicon-pencil" %>
+    </div>
+    <div class="col-md-2">
+      <%= link_to "Delete", root_path, class: "btn btn-danger btn-block" %>
+    </div>
+  </div>
+</div>

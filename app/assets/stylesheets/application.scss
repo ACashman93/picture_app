@@ -1,10 +1,13 @@
 @import "bootstrap";
 @import "gritter";
 
+html {
+  min-height: 100%;
+  position: relative;
+}
 body {
-  background-color: #ddccff;
-  border-left: #F4F5F9 solid 50px;
-  border-right: #F4F5F9 solid 50px;
+  background: linear-gradient(to bottom, #ddccff, #5200cc);
+  height: 100%;
 }
 
 :root {
@@ -93,6 +96,10 @@ footer p {
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+  min-width: 330px;
+  max-width: 330px;
+  min-height: 330px;
+  max-height: 330px;
 }
 
 .img-pin:hover {
@@ -172,7 +179,7 @@ footer p {
 }
 
 .active {
-  background-color: #A3A0AF;
+  background-color: #bb99ff;
   border-left: 1px solid #8D8B99;
   border-right: 1px solid #8D8B99;
   border-top: 1px solid #8D8B99;
@@ -184,3 +191,31 @@ footer p {
   border-top-right-radius: 6px;
 }
 
+.type-card {
+  width: 335%;
+}
+
+.cat-head {
+  text-align: center;
+}
+
+.type-text {
+  text-align: center;
+}
+
+.type-text a {
+  color: #b3b3cc;
+}
+
+.type-text:hover {
+  background-color: #e0e0eb;
+}
+
+.type-text:hover a {
+  text-decoration: none;
+  color: #33334d;
+}
+
+.type-form {
+  width: 145%
+}
