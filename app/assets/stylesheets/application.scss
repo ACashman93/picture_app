@@ -128,7 +128,7 @@ footer p {
 }
 
 .new-card {
-  padding: 25px;
+  width: 200%;
 }
 
 .new-card-head {
@@ -193,7 +193,7 @@ footer p {
 }
 
 .type-card {
-  width: 335%;
+  width: 292%;
 }
 
 .cat-head {
@@ -218,14 +218,21 @@ footer p {
 }
 
 .type-form {
-  width: 145%
+  width: 145%;
 }
 
 .fa-size {
   font-size: 1.3rem;
 }
 
-.justify-right {
+.center-card {
   position: relative;
-  float: right;
+  left: 35%;
+  transform: translateY(5%);
+}
+
+.center-card-pic-form {
+  position: relative;
+  left: 25%;
+  transform: translateY(5%);
 }
