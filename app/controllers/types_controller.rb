@@ -37,6 +37,13 @@ class TypesController < ApplicationController
     end
   end
 
+  def destroy
+    @type.destroy
+    respond_to do |format|
+      format.html { redirect_to types_path, notice: 'Your category was successfully deleted'}
+    end
+  end
+
   private
     def set_type
       @type = Type.find(params[:id])
