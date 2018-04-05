@@ -26,7 +26,7 @@ Type.create!(title: "Holidays")
 
 puts "Holidays category created"
 
-2.times do |picture|
+12.times do |picture|
   Picture.create!(image: "https://placehold.it/300x300",
                   description: "Andrew #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   date: Date.today,
@@ -34,9 +34,9 @@ puts "Holidays category created"
                   )
 end
 
-puts "2 Andrew pictures created"
+puts "12 Andrew pictures created"
 
-2.times do |picture|
+12.times do |picture|
   Picture.create!(image: "https://placehold.it/300x300",
                   description: "Jacob #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   date: Date.today - 1,
@@ -44,34 +44,34 @@ puts "2 Andrew pictures created"
                   )
 end
 
-puts "2 Jacob pictures created"
+puts "12 Jacob pictures created"
 
-2.times do |picture|
+12.times do |picture|
   Picture.create!(image: "https://placehold.it/300x300",
-                  description: "My #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  description: "My Family #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   date: Date.today - 2,
                   type_id: Type.third!.id
                   )
 end
 
-puts "2 Family pictures created"
+puts "12 Family pictures created"
 
-2.times do |picture|
+12.times do |picture|
   Picture.create!(image: "https://placehold.it/300x300",
-                  description: "My #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  description: "My Events #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   date: Date.today - 3,
                   type_id: Type.fourth!.id
                   )
 end
 
-puts "2 Events pictures created"
+puts "12 Events pictures created"
 
-2.times do |picture|
+12.times do |picture|
   Picture.create!(image: "https://placehold.it/300x300",
-                  description: "My #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  description: "My holidays #{picture} description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   date: Date.today - 4,
                   type_id: Type.fifth!.id
                   )
 end
 
-puts "2 Holidays pictures created"
+puts "12 Holidays pictures created"
