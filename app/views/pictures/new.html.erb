@@ -1,15 +1,11 @@
 <div class="album text-muted">
-  <div class="row">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8">
-      <div class="container portfolio-container">
-        <div class="card new-card-head" style="width: 18rem;">  
-          <div class="card-header">
-            <h3>Add a New Picture</h3>
-          </div>
+  <div class="container portfolio-container">
+    <div class="center-card-pic-form">
+      <div class="card new-card">  
+        <div class="card-header">
+          <h3>Add a New Picture</h3>
         </div>
-        <div class="card bg-light mb-3 new-card" style="width: 18rem;">
+        <div class="card-body">
             <%= render 'form', pic: @pic %>
         </div>
       </div>

@@ -1,20 +1,22 @@
 <%= form_for(pic) do |f| %>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-11">
       <div class="form-group">
-        <label class="btn btn-outline-secondary btn-lg">
-          Choose file: <%= f.file_field :image, style: 'display:none;' %>
-        </label>
+        <%= f.label "Choose file:", class: "sr-only" %>
+          Upload Image: <span class="btn fa-size"><%= fa_icon('download') %> <%= f.file_field :image, style: 'display:none;' %></span>
       </div>
-
+    </div>
+    <div class="col-md-1">
       <div class="form-group">
-       <%= f.label "Date:", class: "sr-only" %>
-       <%= f.date_field :date, class: "btn" %>
+       <span class="btn fa-size"><%= fa_icon('floppy-o') %><%= f.submit "", style: 'display:none;' %></span>
       </div>
-
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
       <div class="form-group">
         <%= f.label "Category:", class: "sr-only" %>
-        <%= f.collection_select(:type_id, Type.all, :id, :title,
+        Category: <%= f.collection_select(:type_id, Type.all, :id, :title,
                                 {
                                   include_blank: true
                                 },
@@ -22,14 +24,19 @@
                                 )
         %>
       </div>
-
+    </div>
+    <div class="col-md-6">
       <div class="form-group">
-        <%= f.label "Description:" %>
-        <%= f.text_area :description, class: 'form-control', rows: 5 %>
+        <%= f.label "Date:", class: "sr-only" %>
+        Date: <%= f.date_field :date, class: "form-control" %>
       </div>
-
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <div class="form-group">
-       <%= f.submit "Add new picture", class: "btn btn-outline-secondary btn-lg" %>
+        <%= f.label "Description:", class: "sr-only" %>
+        Description: <%= f.text_area :description, class: 'form-control', rows: 5 %>
       </div>
     </div>
   </div>
