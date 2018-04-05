@@ -1,14 +1,11 @@
 <div class="album text-muted">
   <div class="container portfolio-container">
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-7">
-        <div class="card type-card">
-          <h1 class="card-header cat-head type-text">Categories<span class="justify-right"><%= link_to fa_icon('plus'), new_type_path, class: "btn fa-size" %></span></h1>
-        </div>
-        <div class="card type-card">
-          <%= render @types %>
-        </div>
+    <div class="center-card">
+      <div class="card type-card">
+        <h1 class="card-header cat-head">Categories<span class="pull-right type-text"><%= link_to fa_icon('plus'), new_type_path, class: "btn fa-size" %></span></h1>
+      </div>
+      <div class="card type-card">
+        <%= render @types %>
       </div>
     </div>
   </div>
