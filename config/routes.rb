@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  resources :types, only: [:index, :show]
-
-  # get 'types/show'
-
   devise_for :users
   resources :pictures
-  get 'categories', to: 'pages#andrew'
+  resources :types
+  get 'categories', to: 'types#index'
 
   # get 'jacob', to: 'pages#jacob'
 

@@ -17,7 +17,11 @@ module ApplicationHelper
       },
       {
         url: pictures_path,
-        title: 'All images'
+        title: 'All Images'
+      },
+      {
+        url: new_picture_path,
+        title: 'Add New Image'
       }
     ]
   end
