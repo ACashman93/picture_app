@@ -1,37 +1,31 @@
 <div class="album text-muted">
   <div class="container portfolio-container">
-    <div class="row">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6">
-        <div class="card show-card">
-          <div class="row">
-            <div class="col-md-2 type-text">  
-              <%= link_to fa_icon('arrow-left'), pictures_path, class: "btn fa-size" %>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-md-2 type-text">
-              <%= link_to fa_icon('pencil'), edit_picture_path(@pic), class: "btn fa-size" %>
-            </div>
-            <div class="col-md-2 type-text">
-              <%= link_to fa_icon('trash'), @pic, method: :delete, data: { confirm: 'Are you sure that you want to delete this picture?'}, class: "btn fa-size" %>
-            </div>
-          </div>
-          <p>
-            <%= image_tag @pic.image, class: "card-img-top" %>
-          </p>
-          <div class="card-body">
-            <p class="card-text">
-              <%= @pic.description %>
-            </p>
-            <p>
-              <%= @pic.date %>
-            </p>
-            <p>
-              <%= @pic.type_id %>
-            </p>
-          </div>
+    <div class="card pic-show-card">
+      <div class="row pic-row">
+        <div class="col-md-2 type-text">  
+          <%= link_to fa_icon('arrow-left'), pictures_path, class: "btn fa-size" %>
         </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-2 type-text">
+            <%= link_to fa_icon('arrows-alt'), @pic.image_url, class: "btn fa-size" %>
+        </div>
+        <div class="col-md-2 type-text">
+          <%= link_to fa_icon('pencil'), edit_picture_path(@pic), class: "btn fa-size" %>
+        </div>
+        <div class="col-md-2 type-text">
+          <%= link_to fa_icon('trash'), @pic, method: :delete, data: { confirm: 'Are you sure that you want to delete this picture?'}, class: "btn fa-size" %>
+        </div>
+      </div>
+      <p>
+        <%= image_tag img_check(@pic.image, 'image_holder'), class: "card-img-top" %>
+      </p>
+      <div class="card-body">
+        <p class="card-text">
+          <%= @pic.description %>
+        </p>
+        <p>
+          <%= @pic.date.strftime("%B %Y") %><span class="pull-right"><%= @pic.type.title %></span>
+        </p>
       </div>
     </div>
   </div>

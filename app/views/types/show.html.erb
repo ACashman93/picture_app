@@ -1,14 +1,25 @@
 <div class="album text-muted">
   <div class="container portfolio-container">
-    <div class="card">
+    <div class="card card-type-header pic-row">
       <div class="card-header">
-        <h1><%= @type.title %> Pictures</h1>
+        <div class="row">
+          <div class="col-md-1 type-text">  
+            <%= link_to fa_icon('arrow-left'), types_path, class: "btn fa-size" %>
+          </div>
+          <div class="col-md-10">
+            <h1 class="text-center"><%= @type.title %>'s Pictures</h1>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-wrapper">
-      <% @type.pictures.each do |picture| %>
-        <%= link_to (image_tag img_check(picture.image, 'image_holder')), picture, class: "img-pin" %>
+      <% @pics.each do |picture| %>
+        <div class="img-pin">
+          <%= link_to (image_tag img_check(picture.image, 'image_holder')), picture %>
+          <%= picture.date.strftime("%B %Y") %><span class="pull-right"><%= picture.type.title %></span>
+        </div> 
       <% end %>
     </div>
+    <%= paginate @pics %>
   </div>
 </div>

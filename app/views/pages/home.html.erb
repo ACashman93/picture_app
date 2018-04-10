@@ -7,20 +7,26 @@
           <div class="card-body">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-<!--                 <div class="carousel-item active">
-                  <%#= image_tag "_D8504581.jpg", width: '100%', class: "d-block w-100" %>
-                </div>
                 <div class="carousel-item">
-                  <%#= image_tag "Aston_Martin1.jpg", width: '100%', class: "d-block w-100" %>
-                </div> -->
+                  <%= image_tag "_D8504581.jpg", class: "d-block w-100 carousel-pic" %>
+                </div>
                 <div class="carousel-item active">
-                  <%= image_tag Picture.last.image, width: '100%', class: "d-block w-100" %>
+                  <%= image_tag "Aston_Martin1.jpg", class: "d-block w-100 carousel-pic" %>
                 </div>
                 <div class="carousel-item">
-                  <% Picture.all.each do |picture| %>
-                    <%= image_tag picture.image, width: '100%', class: "d-block w-100" %>
-                  <% end %>
+                  <%= image_tag "hogwarts_carousel.jpg", class: "d-block w-100 carousel-pic" %>
                 </div>
+                <div class="carousel-item">
+                  <%= image_tag "vault_boy_carousel.jpg", class: "d-block w-100 carousel-pic" %>
+                </div>
+                <!-- <div class="carousel-item active">
+                  <%#= image_tag Picture.find(1).image, class: "d-block w-100" %>
+                </div>
+                <div class="carousel-item">
+                  <%# Picture.all.each do |picture| %>
+                    <%#= image_tag picture.image, class: "d-block w-100" %>
+                  <%# end %>
+                </div> -->
               </div>
             </div>
           </div>

@@ -2,8 +2,12 @@
   <div class="container portfolio-container">
     <div class="col-wrapper">
       <% @pics.each do |picture| %>
-        <%= link_to (image_tag img_check(picture.image, 'image_holder')), picture, class: "img-pin" %>
+        <div class="img-pin">
+          <%= link_to (image_tag img_check(picture.image, 'image_holder')), picture %>
+          <%= picture.date.strftime("%B %Y") %><span class="pull-right"><%= picture.type.title %></span>
+        </div> 
       <% end %>
     </div>
+    <%= paginate @pics, window: 1 %>
   </div>
 </div>
