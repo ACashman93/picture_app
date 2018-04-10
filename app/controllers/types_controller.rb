@@ -6,6 +6,7 @@ class TypesController < ApplicationController
   end
 
   def show
+    @pics = @type.pictures.page(params[:page]).per(12)
   end
 
   def new
@@ -17,7 +18,7 @@ class TypesController < ApplicationController
 
     respond_to do |format|
       if @type.save
-        format.html { redirect_to @type, notice: 'Your new category was successfully added.' }
+        format.html { redirect_to types_path, notice: 'Your new category was successfully added.' }
       else
         format.html { render :new }
       end
