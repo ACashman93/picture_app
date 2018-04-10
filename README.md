@@ -14,38 +14,48 @@
 -- Date
 -- Category
 -- Description
+-- Foreign key to types
+
+- Types
+-- Titles
+-- Foreign key to images
 
 ### PAGES
 - Login
 -- No registration
 -- Authenticate
+
 - Home
 -- Carousel
--- Sidebar and navbar
+-- Navbar
+
 - All photos
 -- Cascades images through three columns
 -- Images are links to show page
+-- Shows date and type of each image
+
 - Add image
 -- Form
 --- File select image
 --- Date
 --- Drop down menu of categories
 --- Description text field
+
 - Categories
 -- Shows list of all categories
--- Add new categories
+-- Edit and Delete categories
+
+- Add new categories
+-- Form
+--- Title
 
 ## Components
 - Navbar
 -- Home
 -- Categories
 -- All photos
--- Sign In(Signed Out) (toggle)
--- Sign Out (Signed In) (toggle)
-
-- Sidebar
--- Add new image
--- Add new category
+-- Add new Photo
+-- Sign Out
 
 - Devise
 -- Authentication
@@ -58,6 +68,7 @@
 
 - Bootstrap
 -- Cards, navbars, and a carousel
+-- Custom CSS
 
 ### User Story
 - Bob goes to site url
